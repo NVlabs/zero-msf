@@ -1,0 +1,27 @@
+# Core ML/AI Libraries
+open3d
+huggingface-hub[torch]
+einops
+scipy
+
+# Image/Computer Vision
+opencv-python
+matplotlib
+scikit-image
+Pillow
+
+# Data handling/utilities
+tqdm
+numpy-quaternion
+plyfile
+packaging
+PyYAML
+iopath
+
+# Optional/Conditional dependencies (used with try/except)
+tensorboard
+poselib
+pycolmap
+
+# Visualization (for visualize_viser.py)
+viser

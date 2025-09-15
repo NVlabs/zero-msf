@@ -1,0 +1,3 @@
+[submodule "zmsf/mast3r"]
+	path = zmsf/mast3r
+	url = git@github.com:naver/mast3r.git

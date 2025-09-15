@@ -1,0 +1,39 @@
+class_path: zmsf.eval_models.St3RModel
+init_args:
+  exp_name: zmsf_shift+dynamicreplica+vkitti+kubric+pointodyssey+spring_adap_241106
+  predictor:
+    class_path: zmsf.AsymmetricMASt3R_flow
+    init_args:
+      pos_embed: RoPE100
+      patch_embed_cls: ManyAR_PatchEmbed
+      img_size:
+      - 384
+      - 512
+      head_type: catmlp+dpt
+      output_mode: pts3d+desc24
+      depth_mode:
+      - exp
+      - -.inf
+      - .inf
+      flow_mode:
+      - exp
+      - -.inf
+      - .inf
+      conf_mode:
+      - exp
+      - 1
+      - .inf
+      enc_embed_dim: 1024
+      enc_depth: 24
+      enc_num_heads: 16
+      dec_embed_dim: 768
+      dec_depth: 12
+      dec_num_heads: 12
+      two_confs: true
+      use_gt_pts3d: false
+      custom_profiler: false
+      infer_flow: false
+  weight_path: checkpoints/zmsf_shift+dynamicreplica+vkitti+kubric+pointodyssey+spring_adap_241106_last.ckpt
+  pretrained: null #/home/MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric.pth
+  camera_space: true
+  decompose: false

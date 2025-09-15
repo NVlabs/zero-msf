@@ -1,0 +1,2 @@
+Main model (config zmsf_shift+dynamicreplica+vkitti+kubric+pointodyssey+spring_adap_241106): 
+https://drive.google.com/file/d/1F0A1uicevtLvSnZlrSzOW0VREohbsUcT/view
